@@ -1,0 +1,8 @@
+@import url(style-mini.css);
+@import url(./libs/aos.css);
+@import url(_normalize.css);
+@import url(_global.css);
+@import url(_fonts.css);
+@import url(animation.css);
+
+@import url(_media.css);

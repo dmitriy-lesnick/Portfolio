@@ -1,0 +1,294 @@
+.container {
+    padding: 0 30px;
+    max-width: 974px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.title-page {
+    font-family: "gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+}
+.txt-page {
+    font-family: "gilroy", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding-top: 32px;
+    border-bottom: 1px solid #828282;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    z-index: 3;
+}
+.header--active {
+    border-bottom: none;
+    background-color: #d8d7d7;
+}
+.header__media-wrp {
+    display: none;
+}
+.header__nav {
+    margin-bottom: 31px;
+}
+.header__burger {
+    display: none;
+}
+.header__list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.header__link {
+    font-family: "gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+}
+.header__link:hover {
+    color: #070707;
+}
+.header__link:active {
+    color: #828282;
+}
+.hero {
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+.hero__title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.hero__subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.hero__photo-wrp {
+    margin-top: 20px;
+}
+.hero__photo {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #828282;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+    box-shadow: 5px 5px 15px #828282;
+    animation: main-photo-shadow 10s linear 10ms infinite;
+    -webkit-animation: main-photo-shadow 10s linear 10ms infinite;
+}
+.hero__photo-small {
+    display: none;
+}
+.about-me {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+    border-top: 1px solid #828282;
+    border-bottom: 1px solid #828282;
+}
+.about-me__title {
+    margin-bottom: 20px;
+}
+.about-me__txt {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 485px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.skills {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    border-bottom: 1px solid #828282;
+}
+.skills__title {
+    width: 100%;
+    text-align: center;
+}
+.skills__subtitle {
+    margin: 20px 0 83px;
+    width: 100%;
+    text-align: center;
+}
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px;
+    animation: line-text 10s linear 10ms infinite;
+    -webkit-animation: line-text 10s linear 10ms infinite;
+}
+.skills__item {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.skills__item svg {
+    height: 100%;
+    width: 100%;
+}
+.skills__img {
+    min-height: 90px;
+    margin-bottom: 23px;
+}
+.item__name {
+    display: block;
+    margin-bottom: 41px;
+    font-family: "gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+}
+.portfolio {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+.portfolio__wrp {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.portfolio__arrow {
+    align-self: center;
+    transition: 0.2s ease-in-out all;
+    -webkit-transition: 0.2s ease-in-out all;
+    -moz-transition: 0.2s ease-in-out all;
+    -ms-transition: 0.2s ease-in-out all;
+    -o-transition: 0.2s ease-in-out all;
+}
+.portfolio__button-previous {
+    fill: #828282;
+    width: 40px;
+    height: 16px;
+    animation: arrow-trans-flash-left 1.2s linear 10ms infinite;
+    -webkit-animation: arrow-trans-flash-left 1.2s linear 10ms infinite;
+}
+.portfolio__button-next {
+    fill: #828282;
+    width: 40px;
+    height: 16px;
+    animation: arrow-trans-flash-right 1.2s linear 10ms infinite;
+    -webkit-animation: arrow-trans-flash-right 1.2s linear 10ms infinite;
+}
+.portfolio__button--none {
+    fill-opacity: 30%;
+    pointer-events: none;
+    animation: none;
+    -webkit-animation: none;
+}
+.portfolio__subtitle {
+    margin: 20px 0 30px;
+}
+.portfolio__slider {
+    width: 100%;
+    overflow: hidden;
+}
+.portfolio__slider-line {
+    display: flex;
+    transition: 0.3s ease-in-out all;
+    -webkit-transition: 0.3s ease-in-out all;
+    -moz-transition: 0.3s ease-in-out all;
+    -ms-transition: 0.3s ease-in-out all;
+    -o-transition: 0.3s ease-in-out all;
+}
+.portfolio__slide {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 80%;
+    text-decoration: underline;
+    transition: 0.2s ease-in-out;
+}
+.portfolio__indicator {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #828282;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.2s ease-in-out all;
+    -webkit-transition: 0.2s ease-in-out all;
+    -moz-transition: 0.2s ease-in-out all;
+    -ms-transition: 0.2s ease-in-out all;
+    -o-transition: 0.2s ease-in-out all;
+}
+.portfolio__indicator--active {
+    background-color: #828282;
+    border: 1px solid #6b6b6b;
+    scale: 1.1;
+}
+.portfolio__img {
+    width: 100%;
+    margin-bottom: 44px;
+    transition: 0.2s ease-in-out;
+}
+.portfolio__slide:hover {
+    color: gold;
+}
+.portfolio__slide:hover .portfolio__img {
+    transform: scale(1.01);
+}
+.footer {
+    border-top: 1px solid #828282;
+    background: #d8d7d7;
+}
+.contacts {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+.contacts__subtitle {
+    max-width: 275px;
+    margin: 20px auto 35px auto;
+}
+.contacts__button {
+    padding: 13px 30px;
+    font-family: "gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    background: #070707;
+    border-radius: 19px;
+    transition: 0.2s ease-in-out all;
+    -webkit-transition: 0.2s ease-in-out all;
+    -moz-transition: 0.2s ease-in-out all;
+    -ms-transition: 0.2s ease-in-out all;
+    -o-transition: 0.2s ease-in-out all;
+}
+.contacts__button:hover {
+    background-color: #666;
+    color: #292521;
+}
+.contacts__button:active {
+    background: #070707;
+    color: #fff;
+}
