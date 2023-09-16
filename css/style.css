@@ -1,3 +1,13 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
 .container {
     padding: 0 30px 0 30px;
     max-width: 974px;
@@ -299,6 +309,7 @@
 }
 
 .footer {
+    flex: 0 0 auto;
     border-top: 1px solid #828282;
     background: #d8d7d7;
 }
