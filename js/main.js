@@ -80,21 +80,20 @@ function selectSlide(event) {
     if (event.target.className !== "portfolio__indicator" || event.target.className == "portfolio__indicator portfolio__indicator--active") {
         return
     } else {
-        this.querySelector('.portfolio__indicator--active').classList.remove('portfolio__indicator--active')
-        event.target.classList.add('portfolio__indicator--active')
-        indicatorId = parseInt(event.target.id)
-        console.log(indicatorId)
-        arrowStyleChange()
-        rollSlider(indicatorId)
+        this.querySelector('.portfolio__indicator--active').classList.remove('portfolio__indicator--active');
+        event.target.classList.add('portfolio__indicator--active');
+        indicatorId = parseInt(event.target.id);
+        arrowStyleChange();
+        rollSlider(indicatorId);
     }
 };
 
 function indicatorStyleChange() {
     portfolioIndicators.forEach(indicator => {
         if (indicator.id == indicatorId) {
-            indicator.classList.add('portfolio__indicator--active')
+            indicator.classList.add('portfolio__indicator--active');
         } else {
-            indicator.classList.remove('portfolio__indicator--active')
+            indicator.classList.remove('portfolio__indicator--active');
         }
     })
 };
