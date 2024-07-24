@@ -3,6 +3,12 @@
         padding-top: 30px;
     }
 
+    .header .container {
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .header__nav {
         display: flex;
         justify-content: center;
@@ -10,7 +16,6 @@
 
     .header__media-wrp {
         display: block;
-        text-align: center;
     }
 
     .header__title {
@@ -46,11 +51,11 @@
         width: 100%;
         height: 4px;
         background: #828282;
-        transition: 200ms ease-out all;
-        -webkit-transition: 200ms ease-out all;
-        -moz-transition: 200ms ease-out all;
-        -ms-transition: 200ms ease-out all;
-        -o-transition: 200ms ease-out all;
+        transition: 400ms ease-out all;
+        -webkit-transition: 400ms ease-out all;
+        -moz-transition: 400ms ease-out all;
+        -ms-transition: 400ms ease-out all;
+        -o-transition: 400ms ease-out all;
     }
 
     .header__burger-line:first-child {
@@ -70,30 +75,30 @@
         bottom: 0;
     }
 
-    .header__burger--close {
+    .header__burger--active {
         position: relative;
     }
 
-    .header__burger--close .header__burger-line:first-child {
+    .header__burger--active .header__burger-line:first-child {
         top: 50%;
-        transform: rotate(45deg) translateY(-50%);
-        -webkit-transform: rotate(45deg) translateY(-50%);
-        -moz-transform: rotate(45deg) translateY(-50%);
-        -ms-transform: rotate(45deg) translateY(-50%);
-        -o-transform: rotate(45deg) translateY(-50%);
+        transform: rotate(405deg) translateY(-50%);
+        -webkit-transform: rotate(405deg) translateY(-50%);
+        -moz-transform: rotate(405deg) translateY(-50%);
+        -ms-transform: rotate(405deg) translateY(-50%);
+        -o-transform: rotate(405deg) translateY(-50%);
     }
 
-    .header__burger--close .header__burger-line:nth-child(2) {
+    .header__burger--active .header__burger-line:nth-child(2) {
         display: none;
     }
 
-    .header__burger--close .header__burger-line:last-child {
+    .header__burger--active .header__burger-line:last-child {
         bottom: 50%;
-        transform: rotate(-45deg) translateY(50%);
-        -webkit-transform: rotate(-45deg) translateY(50%);
-        -moz-transform: rotate(-45deg) translateY(50%);
-        -ms-transform: rotate(-45deg) translateY(50%);
-        -o-transform: rotate(-45deg) translateY(50%);
+        transform: rotate(-405deg) translateY(50%);
+        -webkit-transform: rotate(-405deg) translateY(50%);
+        -moz-transform: rotate(-405deg) translateY(50%);
+        -ms-transform: rotate(-405deg) translateY(50%);
+        -o-transform: rotate(-405deg) translateY(50%);
     }
 
     .header__list {
@@ -114,20 +119,17 @@
         -o-transform: translateX(-100%);
     }
 
-    .header__list--transition {
-        transition: 400ms ease-in-out all;
-        -webkit-transition: 400ms ease-in-out all;
-        -moz-transition: 400ms ease-in-out all;
-        -ms-transition: 400ms ease-in-out all;
-        -o-transition: 400ms ease-in-out all;
-    }
-
-    .header__list--open {
+    .header__list--active {
         transform: translateX(0%);
         -webkit-transform: translateX(0%);
         -moz-transform: translateX(0%);
         -ms-transform: translateX(0%);
         -o-transform: translateX(0%);
+        transition: 200ms ease-in-out all;
+        -webkit-transition: 200ms ease-in-out all;
+        -moz-transition: 200ms ease-in-out all;
+        -ms-transition: 200ms ease-in-out all;
+        -o-transition: 200ms ease-in-out all;
     }
 
     .hero {
@@ -171,8 +173,35 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
     .hero {
         padding-top: 220px;
+    }
+    .txt-page {
+        font-size: 14px;
+    }
+
+    .about-me {
+        padding: 50px 0;
+    }
+
+    .about-me__txt {
+        gap: 15px;
+    }
+
+    .skills {
+        padding: 50px 0;
+    }
+
+    .portfolio {
+        padding: 50px 0;
+    }
+
+    .portfolio__wrp .portfolio__arrow {
+        display: none;
+    }
+
+    .contacts {
+        padding: 50px 0;
     }
 }
